@@ -1,12 +1,14 @@
 package com.butterknife;
 
 import android.os.Bundle;
+
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
 import android.widget.LinearLayout;
 
 import adapter.CardViewAdapter;
@@ -20,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView mainRecycle;
     @BindView(R.id.activity_main)
     LinearLayout activityMain;
+
     @BindView(R.id.about_toolbar)
     Toolbar mtoolbar;
+
 
 
     private CardViewAdapter cardViewAdapter;
@@ -34,18 +38,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
         setSupportActionBar(mtoolbar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayShowTitleEnabled(false);
         }
+
         cardViewAdapter = new CardViewAdapter(MainActivity.this, title, message);
         mainRecycle.setLayoutManager(new LinearLayoutManager(MainActivity.this));
         mainRecycle.setAdapter(cardViewAdapter);
 
 
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -57,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
+
     //CardView 的初步用法
     // compile 'com.android.support:cardview-v7:25.0.1'  添加依赖
     //  这个属于一种布局模式  在这个里面可以添加自己需要的控件  比如textview  Button  等等

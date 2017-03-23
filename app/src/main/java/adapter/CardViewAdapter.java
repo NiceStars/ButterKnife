@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.TextView;
 
 import com.butterknife.ContentActivity;
@@ -36,7 +37,8 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.MyView
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.main_items, parent, false));//5
+
+        return new MyViewHolder(inflater.from(parent.getContext()).inflate(R.layout.main_items, parent, false));//5
     }
 
     @Override
@@ -77,6 +79,8 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.MyView
             card_view = (CardView) itemView.findViewById(R.id.card_view);
         }
     }
+
+
 
     //使用RecycleView的话  先添加依赖  在app的build.gradle 里面添加依赖 ：
     // compile 'com.android.support:recyclerview-v7:24.2.1'//这个是RecyclerView的依赖项
