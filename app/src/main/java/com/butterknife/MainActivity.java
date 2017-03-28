@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.activity_main)
     LinearLayout activityMain;
 
-    @BindView(R.id.about_toolbar)
-    Toolbar mtoolbar;
 
 
 
@@ -38,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
-        setSupportActionBar(mtoolbar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setDisplayShowTitleEnabled(false);
+            actionBar.setDisplayShowTitleEnabled(true);
+            actionBar.setTitle("Android");
+
         }
 
         cardViewAdapter = new CardViewAdapter(MainActivity.this, title, message);

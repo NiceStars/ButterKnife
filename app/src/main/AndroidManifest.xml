@@ -11,7 +11,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity android:name=".ContentActivity" />
         <activity
             android:name=".HomeActivity"
