@@ -2,8 +2,39 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/github"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/github"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/java"
+        android:orderInCategory="100"
+        android:title="@string/java"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/android"
+        android:orderInCategory="100"
+        android:title="@string/android"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/php"
+        android:orderInCategory="100"
+        android:title="@string/php"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/html"
+        android:orderInCategory="100"
+        android:title="@string/html"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/ps"
+        android:orderInCategory="100"
+        android:title="@string/ps"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/server"
+        android:orderInCategory="100"
+        android:title="@string/server"
+        app:showAsAction="never" />
+
 </menu>

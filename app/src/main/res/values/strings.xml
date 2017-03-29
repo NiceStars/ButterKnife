@@ -8,4 +8,19 @@
 
     <string name="action_settings">Settings</string>
 
+    <string name="readme"> \t \t在第一个公司因为对java不怎么感兴趣,或者说是对开发经理给我的任务我没完成,为了掩盖自己的不足,我跟着启蒙导师刘文昌后面学习了Android完全是自学,没有任何章法,看到什么不会学什么,很乱,学的很杂!
+         \n\t\t 从宝葫芦出来之后进了江湖科技!在江湖科技自学,跟着王璐李勇后面,也学到不少东西,有五个月!然后走之前开发了一个小项目,也算检验自己了吧!
+        \n\t\t后来来了小木科技  Android 这个东西  自学  跟戴工学了很多东西.
+        \n\t\t   一年多了!感觉自己和大牛们的差距还是很大..表现在自己做一个东西,做完就忘了再次写代的话,自己啥都不会写了,因为自己总是复制代码,导致自己写代码的能力 一直没有上去,这是很致命的!
+         \n\t\t 所以现在自己开发这个App  帮助自己记住一些代码的关键步骤.从现在开始代码都要手敲不要复制了!
+         \n\t\t 这个项目的git地址是：https://github.com/NiceStars/ButterKnife.git 不断更新 有什么好的想法  可以联系我  联系邮箱nicestars.cn@gmail.com我可以预留Interface  共同完善这个App
+    </string>
+    <string name="github">链接至GitHub</string>
+    <string name="java">Java</string>
+    <string name="android">Android</string>
+    <string name="php">PHP</string>
+    <string name="html">HTML</string>
+    <string name="ps">Ps</string>
+    <string name="server">服务器</string>
+
 </resources>

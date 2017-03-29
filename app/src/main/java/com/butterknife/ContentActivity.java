@@ -19,7 +19,7 @@ public class ContentActivity extends AppCompatActivity {
 
     @BindView(R.id.content_iv)
     MyZoomImageView contentIv;
-    private int[] res = new int[]{R.mipmap.recycleview,R.mipmap.cardview,R.mipmap.butterknife};
+    private int[] res = new int[]{R.mipmap.recycleview,R.mipmap.cardview,R.mipmap.butterknife,R.mipmap.intent};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
