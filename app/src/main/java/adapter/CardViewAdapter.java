@@ -48,15 +48,12 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.MyView
         holder.card_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (position==3){
 
-
-                }else{
                     Intent i=new Intent();
                     i.putExtra("position",position);
                     i.setClass(context, ContentActivity.class);
                     context.startActivity(i);
-                }
+
             }
         });
 

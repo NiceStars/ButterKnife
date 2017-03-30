@@ -1,6 +1,7 @@
 package com.butterknife;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -56,10 +57,17 @@ public class HomeActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
 
         int id = item.getItemId();
+        if (id == R.id.github) {
+            //链接至github 调用系统浏览器
+            Intent intent = new Intent();
+            intent.setAction("android.intent.action.VIEW");
+            Uri url = Uri.parse("https://github.com/NiceStars/ButterKnife");
+            intent.setData(url);
+            startActivity(intent);
+        } else if (id == R.id.java) {
 
-
-        if (id == R.id.action_settings) {
-            return true;
+        } else if (id == R.id.android) {
+            startActivity(new Intent(HomeActivity.this, MainActivity.class));
         }
 
         return super.onOptionsItemSelected(item);
@@ -68,7 +76,7 @@ public class HomeActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
