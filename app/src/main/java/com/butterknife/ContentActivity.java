@@ -29,5 +29,6 @@ public class ContentActivity extends AppCompatActivity {
 
         int p = getIntent().getIntExtra("position",-1);
         contentIv.setImageResource(res[p]);
+
     }
 }

@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     private CardViewAdapter cardViewAdapter;
 
-    private String[] title = new String[]{"RecycleView的使用", "Cardview的使用", "控件注解框架的使用", "链接至手机浏览器"};
-    private String[] message = new String[]{"RecycleView使用的基本步骤 get", "Cardview使用的基本步骤 get", "", ""};
+    private String[] title = new String[]{"RecycleView的使用", "Cardview的使用", "控件注解框架的使用", "链接至手机浏览器","小米推送服务"};
+    private String[] message = new String[]{"RecycleView使用的基本步骤 get", "Cardview使用的基本步骤 get", "控件注解框架的使用", "如何链接至手机浏览器","小米推送服务使用具体步骤"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
