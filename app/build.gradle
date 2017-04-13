@@ -32,5 +32,4 @@ dependencies {
     compile 'com.android.support:design:25.1.0'
     testCompile 'junit:junit:4.12'
     apt 'com.jakewharton:butterknife-compiler:8.5.1'
-    compile files('libs/MiPush_SDK_Client_3_2_2.jar')
 }

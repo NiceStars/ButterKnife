@@ -3,13 +3,16 @@ package com.butterknife;
 import android.os.Bundle;
 
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import android.widget.LinearLayout;
+import android.widget.Toast;
+
+
 
 import adapter.CardViewAdapter;
 import butterknife.BindView;
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     private CardViewAdapter cardViewAdapter;
 
     private String[] title = new String[]{"RecycleView的使用", "Cardview的使用", "控件注解框架的使用", "链接至手机浏览器","小米推送服务"};
@@ -36,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
@@ -43,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setTitle("Android");
 
         }
-
         cardViewAdapter = new CardViewAdapter(MainActivity.this, title, message);
         mainRecycle.setLayoutManager(new LinearLayoutManager(MainActivity.this));
         mainRecycle.setAdapter(cardViewAdapter);
@@ -63,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+
     //CardView 的初步用法
     // compile 'com.android.support:cardview-v7:25.0.1'  添加依赖
     //  这个属于一种布局模式  在这个里面可以添加自己需要的控件  比如textview  Button  等等
@@ -76,5 +81,7 @@ public class MainActivity extends AppCompatActivity {
     //然后 在头部 添加 apply plugin: 'com.neenbedankt.android-apt'
     //最后在项目的 build.gradle 里面添加   classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     //刷新一下  使用的时候一定要在页面OnCreate方法里面 绑定一下  代码： ButterKnife.bind(this);
+
+
 
 }
